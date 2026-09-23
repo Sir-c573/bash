@@ -1,0 +1,110 @@
+# Server Health Check
+
+A simple Bash script for checking the basic health and status of a Linux server.
+
+## Features
+
+The script checks:
+
+* 🖥️ Hostname
+* ⏱️ Server uptime
+* ⚙️ CPU usage
+* 💾 Memory usage
+* 💿 Disk usage
+* 🌐 Internet connectivity
+
+## Requirements
+
+* Linux
+* Bash
+* Standard Linux utilities such as:
+
+  * `top`
+  * `free`
+  * `df`
+  * `ping`
+  * `hostname`
+  * `uptime`
+
+## Installation
+
+Clone the repository:
+
+```bash
+git clone git@github.com:YOUR_USERNAME/server-health-check.git
+```
+
+Go to the project directory:
+
+```bash
+cd server-health-check
+```
+
+Make the script executable:
+
+```bash
+chmod +x health_check.sh
+```
+
+## Usage
+
+Run the script:
+
+```bash
+./health_check.sh
+```
+
+Or run it directly with Bash:
+
+```bash
+bash health_check.sh
+```
+
+## Example Output
+
+```text
+==============================
+     SERVER HEALTH CHECK
+==============================
+
+Hostname: ubuntu-server
+Uptime: up 2 hours, 15 minutes
+
+--- CPU Usage ---
+CPU Usage: 3.2%
+
+--- Memory Usage ---
+              total        used        free
+Mem:           7.7Gi       1.8Gi       4.5Gi
+
+--- Disk Usage ---
+Filesystem      Size  Used Avail Use%
+/                20G   8G   12G  40%
+
+--- Internet ---
+Internet: OK
+
+==============================
+Health check completed.
+==============================
+```
+
+## Project Structure
+
+```text
+server-health-check/
+├── health_check.sh
+└── README.md
+```
+
+## Technologies
+
+* Bash
+* Linux
+* Git
+* GitHub
+
+## Purpose
+
+This project was created to practice Linux administration and Bash scripting fundamentals while building a small DevOps-related automation tool.
+
